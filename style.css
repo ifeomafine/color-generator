@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    background-color: #00848f;
+}
+section {
+    max-width: 400px;
+    margin: 20vh auto;
+    background-color: #fff;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, .1);
+    padding: 30px;
+    border-radius: 5px;
+    border-radius: 12px;
+}
+h1 {
+    margin-top: 40px;
+    font-weight: 900;
+}
+input {
+    font-size: 1em;
+    padding: 15px;
+    width: 100%;
+    border: 1px solid gray;
+}
+input [type="button"] {
+    margin-top: 20px;
+    background-color: #333;
+    border: none;
+    color: lightgray;
+    font-weight: 600;
+}
+.result {
+    font-weight: 600;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.result p {
+    padding: 10px;
+    background-color: #dadada;
+    border-radius: 5px;
+}
+.result span {
+    font-weight: 600;
+}
+#colorInput {
+    text-align: center;
+}
+/* Added this part of the CSS to add more interactivity to the Buttons */
+#genBtn:active {
+    background-color: #fff;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  #genSearch:active {
+    background-color: #000;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }  
