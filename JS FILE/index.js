@@ -7,12 +7,13 @@ const colorGenerator = (color) =>{
         displayColor(color);
     }
     else{
-        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        // basically, the 'toString(20)' is for the number of words excluding space in the name of the color
+        // for every time you change the number in the 'toString',change the first two numbers in the '20777215'
+        const randomColor = Math.floor(Math.random()*20777215).toString(20);
         displayColor(randomColor);
     }
 
 }
-
 //  Display Color Function
 const displayColor = (color) =>{
     let name_value = ntc.name(color);
@@ -32,5 +33,3 @@ genSearch.addEventListener("click", function(){
 genBtn.addEventListener("click", function(){
     colorGenerator();
 })
-
-// colorGenerator();
